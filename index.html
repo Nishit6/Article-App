@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light " >
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_3FYOy_AoxGVPQG9pjhdEgbvKLIs7uUP8g&usqp=CAU" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Article
+          </a>
+         
+          
+          <a  class="d-flex" href="#">Login</a>
+           
+          
+        </div>
+      </nav>
+      <!-- ........................................................................ -->
+      
+      <div id="list" class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Related videos</h5>
+           
+          </div>
+          <p class="mb-1">Suggested videos on Arrays</p>
+           <iframe class="vidone" width="270px" height="200px" src="https://www.youtube.com/embed/b0tLvc_gTkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <small class="text-muted"></small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+        
+          <p class="mb-1"><iframe class="vidtwo" width="270px" height="200px" src="https://www.youtube.com/embed/0JYgnhnZFcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <small class="text-muted"></small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <iframe class="vidthree" width="270px" height="200px" src="https://www.youtube.com/embed/wP_XvRhwJPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <iframe  class="vidfour"width="270px" height="200px" src="https://www.youtube.com/embed/T6lOtastw6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+          </a>
+          <br>
+          <br>
+          <br>
+          <a  href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+               <iframe class="site" style="height: 1900px;" src="https://www.pepcoding.com/" frameborder="0"></iframe>
+              
+            </div>
+          </a>
+      </div>
+      <!--  -->
+
+      
+   
+      <!-- ------------------------------------------------------- -->
+      <div id="card" class="card text-center">
+        <h5 style="text-align: left;" class="card-header">
+            <b>Problem :</b> Sub-arrays of an array
+        </h5>
+        <div id="body" class="card-body">
+            <p class="para-one">Dear readers,
+                <br>
+                We hope that you are enjoying your coding journey!
+                Let's now move to the next problem, that is <b>‘Sub-arrays of an array’</b> of chapter <b>‘Array and Functions’</b>.  This is a bit of a different problem but an easy one. Before moving to the problem, we ask you, what actually are subarrays of an array. 
+                You might have studied about a subset of a set in your school. Well, like a subset, a sub-array is an array of a length smaller or equal to the given array’s length, whose members are all members of the given array. But unlike a sub-set, in a sub-array, the sequence should be contiguous. 
+                Let’s jump to the problem.
+                </p>
+                <b>Understanding the Problem:  </b>
+                <br>
+                <p class="para-one">In the question as it says, you are given an array of size 'n' and n elements of the same array. We are required to find and print all the subarrays of the given array. 
+                    So, the input part is easy. We can take input of an array straightforwardly. Then skip to the crucial part, in which we will think about the solution of the problem.
+                    
+                    Before moving to the solution part, make sure you try to solve it on your own. Like, Rob Siltanen said,“People who are crazy enough to think they can change the world, are the ones who do.” 
+                    You may also take help from the question video, where our team has particularly explained what exactly is required to be done.
+                    Now, we are ready to move to the solution part. 
+                    </p>
+                    <br>
+                    <b>Moving on:</b>
+                    <p class="para-one">
+                        We are given an array of integers. We need to print all the possible subarrays of this array. Now, a sub-array is a slice from the array which is contiguous (i.e., occupy consecutive positions) and inherently maintains the order of elements.
+                        <em class="em">For  example, the sub-arrays of the array {1, 2, 3} are {1}, {1, 2}, {1, 2, 3} , {2}, {2, 3}, and {3}.</em> We need to print these sub-arrays on different lines and also there should be a tab space in between the printed sub-array sequences, like shown below.</p>
+    
+                        <em style="text-align: left;"> Example:</em>    
+                            <ul type=square style="background-color: lightgreen;">
+                                For Input : Output required
+                                <li>n - 3 &nbsp; &nbsp;  - &nbsp;&nbsp;  1</li> 
+                                <li>n1 - 1 &nbsp; &nbsp;- &nbsp; 1 &nbsp;2</li>  
+                                <li>n2 - 2 &nbsp; &nbsp;-&nbsp; 1&nbsp;2&nbsp;3</li>
+                                <li>n3 - 3 &nbsp; &nbsp;-&nbsp; 2</li>
+    
+                            </ul>
+                        </em>
+                        <br>
+                       
+                        <div id="one" style="background-color: black;">
+                            <p id=" code">  
+                                Scanner scn = new Scanner(System.in);
+                                <br>
+                                int n = scn.nextInt;
+                                <br>
+                            
+                                int[] arr = new int[n];
+                                <br>
+                                for(int i = 0; i < n; i++){
+                                    <br>
+                                   arr[i] = scn.nextInt;
+                                   <br>
+                                }
+                            </p>
+    
+                        </div>
+                        <br>
+                        <p class="para-one" >These above lines of code help to take required 
+                            input that is, number n and corresponding n elements for input array.
+                            I hope that you are with us till here. Just show a bit more patience and we will soon look at the part where we will finally solve this problem.
+                            
+                            So, next comes <b>HOW?</b>
+                            <br>
+                            For solving this problem, we make use of three loops; two loops for traversing the array and one for printing the elements of the array.
+                            </p>
+                            <br>
+                            <div id="two" style="background-color: black;">
+                                <p id=" code">  
+                                    for(int i = 0; i < arr.length; i++){
+                                        <br>
+                                        for(int j = i; j < arr.length; j++){
+                                            <br>
+                                           for(int k = i; k <= j; k++){
+                                            <br>
+                                             System.out.print(arr[k] + "\t");
+                                             <br>
+                                           }
+                                           <br>
+                                     System.out.println();
+                                     <br>
+                                        }
+                                        <br>
+                                     }
+                                     <br>
+                                 
+                                </p>
+                                <br>
+                                
+        
+                            </div>
+                            <br>
+                            <p class="para-one">
+                                In the diagram below, you can see dry run of this code for an array arr of length 3 and a, b, c as its element that is for an input of: <b>3      a      b     c</b>   
+                                <br>
+                                Before jumping to the diagram, I advise you to try it on your own and write the desired output for the code. And then crosscheck it with the below output.
+                                <br>
+                                Did you get the correct output? Great. If not, don’t feel bad just continue reading.
+                                <br>
+                                As the value of i is initialized to 0, therefore j and k also get initialized to 0. And on entering the third loop, arr[0] which is “a” gets printed. K gets incremented with one. K doesn’t satisfy the condition, so loop breaks.
+                                <br>
+                                Now j gets incremented with one, k again gets initialized to 0. Inside k loop, which runs two time that is for k = 0 and k = 1, “a	b” gets printed, this time, satisfying the conditions.
+                                <br>
+                                Control now comes to the j loop, j gets incremented with one. J now becomes 2. K again gets initialized to 0. Inside the k loop, which runs three times, that is for k = 0,  k = 1 and k = 2, “a       
+                                <br>
+                                b      c” gets printed, this time, satisfying the conditions. Control now comes to the i loop.
+                                Give it a try and similarly run for i = 1 and i=2. You are advised to watch [01:38-03:53] portion of the video for better understanding of the code.
+    
+                            </p>
+                            <b>Question Video:</b>
+                            <br>
+                            <br>
+                            <iframe class="video" style="border: 2px solid lightgreen; margin-left: 25px;" width="815" height="415" src="https://www.youtube.com/embed/lUdWGkCUD54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <br>
+                            <b>Complete code:</b>
+                            <br>
+                            <br>
+                            <div id="three" style="background-color: black;">
+                                <p id=" code">  
+                                    public static void main(String[] args) throws Exception {
+                                        <br>
+                                        Scanner scn = new Scanner(System.in);
+                                        <br>
+                                        int n = scn.nextInt;
+                                        <br>
+                                    
+                                        int[] arr = new int[n];
+                                        <br>
+                                        for(int i = 0; i < n; i++){
+                                            <br>
+                                           arr[i] = scn.nextInt;
+                                           <br>
+                                        }
+                                        <br>
+                                    
+                                        for(int i = 0; i < arr.length; i++){
+                                            <br>
+                                           for(int j = i; j < arr.length; j++){
+                                            <br>
+                                              for(int k = i; k <= j; k++){
+                                                <br>
+                                                System.out.print(arr[k] + "\t");
+                                                <br>
+                                              }
+                                              <br>
+                                        System.out.println();
+                                        <br>
+                                           }
+                                           <br>
+                                        }
+                                        <br>
+                                     }
+                                     <br>
+                                    
+                                    }
+                                    <br>
+                                    
+                                 
+                                </p>
+                                <br>
+                                
+        
+                            </div>
+                            <br>
+                            <p>
+                                So reader, we hope you understood the solution. Don't worry if you were not able to solve this problem by yourself at first, just keep practicing. Opportunities are endless. 
+                                However, if you still face any difficulties in the solution for the problem, you may visit the complete solution <a href="#">video</a>
+                                We will see you again in the next problem. Till then, keep learning. 
+                                <p class="para"><b>Happy coding!</b></p>
+    
+                                Contributed by: <b>Nishit Singh Gaur</b>
+    
+                            </p>
+
+                            
+        </div>
+     </div>
+    
+
+<!-- Footer -->
+<footer class="page-footer font-small blue" style="background-image: linear-gradient(to right, rgb(4, 105, 200) , rgb(184, 226, 204));">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap" rel="stylesheet">
+</body>
+</html>
