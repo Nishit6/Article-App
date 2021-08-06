@@ -4,17 +4,23 @@ body{
     background-image: linear-gradient(to right, rgb(4, 184, 200) , gray);
 }
 #card{
-    margin: 50px auto;
+    margin: 80px auto;
     max-width: 900px;
     box-shadow: 3px 5px 8px black;
+   
    
 }
 h1{
     text-align: left;
     font-size: 30px;
     font-family: 'Georama', sans-serif;
+    
 }
-
+#heading{
+    font-family: 'Hahmlet', serif;
+    font-family: 'STIX Two Text', serif;
+    border: 1px solid lightseagreen;
+}
 .em{
     background-color: yellow;
 }
@@ -35,17 +41,17 @@ h1{
 }
 #one:hover{
     
-    transform: scaleX(1.05);
+    transform: scaleX(1.02);
      box-shadow: 4px 5px 4px gray;
  }
  #two:hover{
     
-    transform: scaleX(1.05);
+    transform: scaleX(1.02);
      box-shadow: 4px 5px 4px gray;
  }
  #three:hover{
     
-    transform: scaleX(1.05);
+    transform: scaleX(1.02);
      box-shadow: 4px 5px 4px gray;
  }
  .list-group{
@@ -67,6 +73,15 @@ h1{
  li{
      margin-left: 25px;
  }
+ #blue{
+     color: blueviolet;
+ }
+#code{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h5{
+    font-family: 'STIX Two Text', serif;
+}
  @media all and (max-width : 1000px) {
     .list-group{
         

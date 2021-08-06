@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
     
-    <title>Document</title>
+    <title>Article</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-light bg-light " >
+    <nav class="navbar fixed-top navbar-expand-lg  navbar-light bg-light " style="border: 1px solid pink;" >
         <div class="container-fluid">
           
           <a class="navbar-brand" href="#">
@@ -70,7 +70,7 @@
       <!-- ------------------------------------------------------- -->
       <div id="card" class="card text-center">
         <h5 style="text-align: left;" class="card-header">
-            <b>Problem :</b> Sub-arrays of an array
+          <p id="heading"></p>  <b>Problem :</b> Sub-arrays of an array</p>
         </h5>
         <div id="body" class="card-body">
             <p class="para-one">Dear readers,
@@ -80,8 +80,8 @@
                 You might have studied about a subset of a set in your school. Well, like a subset, a sub-array is an array of a length smaller or equal to the given array’s length, whose members are all members of the given array. But unlike a sub-set, in a sub-array, the sequence should be contiguous. 
                 Let’s jump to the problem.
                 </p>
-                <b>Understanding the Problem:  </b>
-                <br>
+                <h5 style="text-shadow: 1px 2px 4px gray;">Understanding the Problem:  </h5>
+               
                 <p class="para-one">In the question as it says, you are given an array of size 'n' and n elements of the same array. We are required to find and print all the subarrays of the given array. 
                     So, the input part is easy. We can take input of an array straightforwardly. Then skip to the crucial part, in which we will think about the solution of the problem.
                     
@@ -90,7 +90,7 @@
                     Now, we are ready to move to the solution part. 
                     </p>
                     <br>
-                    <b>Moving on:</b>
+                    <h5 style="text-shadow: 1px 2px 4px gray;">Moving on:</h5>
                     <p class="para-one">
                         We are given an array of integers. We need to print all the possible subarrays of this array. Now, a sub-array is a slice from the array which is contiguous (i.e., occupy consecutive positions) and inherently maintains the order of elements.
                         <em class="em">For  example, the sub-arrays of the array {1, 2, 3} are {1}, {1, 2}, {1, 2, 3} , {2}, {2, 3}, and {3}.</em> We need to print these sub-arrays on different lines and also there should be a tab space in between the printed sub-array sequences, like shown below.</p>
@@ -108,7 +108,7 @@
                         <br>
                        
                         <div id="one" style="background-color: black;">
-                            <p id=" code">  
+                            <p id="code">  
                                 Scanner scn = new Scanner(System.in);
                                 <br>
                                 int n = scn.nextInt;
@@ -135,7 +135,7 @@
                             </p>
                             <br>
                             <div id="two" style="background-color: black;">
-                                <p id=" code">  
+                                <p id="code">  
                                     for(int i = 0; i < arr.length; i++){
                                         <br>
                                         for(int j = i; j < arr.length; j++){
@@ -176,17 +176,18 @@
                                 Give it a try and similarly run for i = 1 and i=2. You are advised to watch [01:38-03:53] portion of the video for better understanding of the code.
     
                             </p>
-                            <b>Question Video:</b>
+                            <br>
+                            <h5 style="text-shadow: 1px 2px 4px gray;">Question Video:</h5>
+                            <br>
+                           
+                            <iframe class="video" style="border: 2px solid brown; margin-left: 25px;" width="915" height="415" src="https://www.youtube.com/embed/lUdWGkCUD54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
                             <br>
-                            <iframe class="video" style="border: 2px solid lightgreen; margin-left: 25px;" width="815" height="415" src="https://www.youtube.com/embed/lUdWGkCUD54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h5 style="text-shadow: 1px 2px 4px gray;">Complete code:</h5>
                             <br>
-                            <br>
-                            <b>Complete code:</b>
-                            <br>
-                            <br>
+                           
                             <div id="three" style="background-color: black;">
-                                <p id=" code">  
+                                <p id="code">  
                                     public static void main(String[] args) throws Exception {
                                         <br>
                                         Scanner scn = new Scanner(System.in);
@@ -251,8 +252,8 @@
 <footer class="page-footer font-small blue" style="background-image: linear-gradient(to right, rgb(4, 105, 200) , rgb(184, 226, 204));">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://prepcoding.com/"> prepcoding.com</a>
     </div>
     <!-- Copyright -->
   
@@ -262,9 +263,13 @@
 
 
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
 
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&family=STIX+Two+Text&display=swap" rel="stylesheet">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
